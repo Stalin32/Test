@@ -26,12 +26,22 @@ class Admin(User):
 
     def __init__(self, first_name, last_name, sex, age):
         super().__init__(first_name, last_name, sex, age)
+        self.privileges = Privileges()
+
+
+
+
+
+class Privileges():
+
+    def __init__(self):
         self.privileges = ['разрешено удалять пользователей', 'разрешено банить пользователей', 'разрешено добавлять сообщения']
 
     def show_privileges(self):
         for i in self.privileges:
             print(f"Админу {i}")
 
+            
 user = Admin('ivan', 'ivanov', 'male', 23)
 
 user.greet_user()
@@ -41,4 +51,4 @@ user.increment_login_attempts()
 user.increment_login_attempts()
 user.reset_login_attempts()
 user.increment_login_attempts()
-user.show_privileges()
+user.privileges.show_privileges()
