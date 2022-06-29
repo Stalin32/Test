@@ -44,6 +44,7 @@ class Privileges():
             
 user = Admin('ivan', 'ivanov', 'male', 23)
 
+
 user.greet_user()
 user.describe_user()
 user.increment_login_attempts()
