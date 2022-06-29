@@ -45,9 +45,17 @@ class Battery():
 
         print(f"This car can go about {range} miles on a full charge.")
 
-
+    def upgrade_battery(self):
+        if self.battery_size < 100:
+            self.battery_size = 100
+            print(f"Battery was replaced")
+        else:
+            print("This car has more pwerfull then 100-kWh battery!")
 
 my_tesla = ElectricCar ('tesla', 'model s', 2019)
 print(my_tesla.get_descriptive_name())
+
 my_tesla.battery_size.describe_battery()
+my_tesla.battery_size.get_range()
+my_tesla.battery_size.upgrade_battery()
 my_tesla.battery_size.get_range()
