@@ -42,14 +42,3 @@ class Privileges():
             print(f"Админу {i}")
 
             
-user = Admin('ivan', 'ivanov', 'male', 23)
-
-
-user.greet_user()
-user.describe_user()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.reset_login_attempts()
-user.increment_login_attempts()
-user.privileges.show_privileges()
