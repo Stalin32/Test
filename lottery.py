@@ -8,11 +8,11 @@ print(f"У вас билет с элементами {my_ticket}.")
 
 count = 1
 k = random.sample(spisok, 4)
-k.sort
+k.sort()
 while my_ticket != k:
     count +=1
     k = random.sample(spisok, 4)
-    k.sort
+    k.sort()
     print(k)
 
 
